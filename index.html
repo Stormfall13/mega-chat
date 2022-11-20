@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="scss/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<title>Document</title>
+</head>
+<body>
+
+
+
+<div id="main__window">
+    <div class="head__main">
+        <img src="img/logo_beta.svg" alt=""> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg> 
+    </div>
+    <div class="main__container">
+        <div class="name__chat">
+            <span class="text__remove">Введите название компании:</span>
+            <div class="wrapp__input">
+                <input type="text" placeholder="Название компании" class="get__company text__remove">
+            </div>
+        </div>
+        <div class="color__select">
+            <span class="text__remove">Выберите цветовое решение:</span>
+            <div class="color__wrapp">
+                <a href="javascript:" class="link__color green"></a>
+                <a href="javascript:" class="link__color white"></a>
+                <a href="javascript:" class="link__color blue"></a>
+            </div>
+        </div>
+        <button href="javascript:" class="link__start text__remove">Начать</button>
+    </div>
+</div>
+
+
+<div class="set__popup">
+    <div class="head__popup">
+        <div class="settings__wrapp">
+            <div class="ellipse">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="M12 16c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.084 0 2 .916 2 2s-.916 2-2 2-2-.916-2-2 .916-2 2-2z"></path><path d="m2.845 16.136 1 1.73c.531.917 1.809 1.261 2.73.73l.529-.306A8.1 8.1 0 0 0 9 19.402V20c0 1.103.897 2 2 2h2c1.103 0 2-.897 2-2v-.598a8.132 8.132 0 0 0 1.896-1.111l.529.306c.923.53 2.198.188 2.731-.731l.999-1.729a2.001 2.001 0 0 0-.731-2.732l-.505-.292a7.718 7.718 0 0 0 0-2.224l.505-.292a2.002 2.002 0 0 0 .731-2.732l-.999-1.729c-.531-.92-1.808-1.265-2.731-.732l-.529.306A8.1 8.1 0 0 0 15 4.598V4c0-1.103-.897-2-2-2h-2c-1.103 0-2 .897-2 2v.598a8.132 8.132 0 0 0-1.896 1.111l-.529-.306c-.924-.531-2.2-.187-2.731.732l-.999 1.729a2.001 2.001 0 0 0 .731 2.732l.505.292a7.683 7.683 0 0 0 0 2.223l-.505.292a2.003 2.003 0 0 0-.731 2.733zm3.326-2.758A5.703 5.703 0 0 1 6 12c0-.462.058-.926.17-1.378a.999.999 0 0 0-.47-1.108l-1.123-.65.998-1.729 1.145.662a.997.997 0 0 0 1.188-.142 6.071 6.071 0 0 1 2.384-1.399A1 1 0 0 0 11 5.3V4h2v1.3a1 1 0 0 0 .708.956 6.083 6.083 0 0 1 2.384 1.399.999.999 0 0 0 1.188.142l1.144-.661 1 1.729-1.124.649a1 1 0 0 0-.47 1.108c.112.452.17.916.17 1.378 0 .461-.058.925-.171 1.378a1 1 0 0 0 .471 1.108l1.123.649-.998 1.729-1.145-.661a.996.996 0 0 0-1.188.142 6.071 6.071 0 0 1-2.384 1.399A1 1 0 0 0 13 18.7l.002 1.3H11v-1.3a1 1 0 0 0-.708-.956 6.083 6.083 0 0 1-2.384-1.399.992.992 0 0 0-1.188-.141l-1.144.662-1-1.729 1.124-.651a1 1 0 0 0 .471-1.108z"></path></svg> 
+            </div>
+            <span class="text__remove">Настройки</span>
+        </div>
+
+        <div class="close__set">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg> 
+        </div>
+
+    </div>
+    <div class="set__item">
+        <div class="item__wrapp"><span class="text__remove">Ночной режим</span><a href="javascript:" id="remove__color" class="remove__color">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="M6.993 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007S14.761 6.993 12 6.993 6.993 9.239 6.993 12zM12 8.993c1.658 0 3.007 1.349 3.007 3.007S13.658 15.007 12 15.007 8.993 13.658 8.993 12 10.342 8.993 12 8.993zM10.998 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2h-3zm17 0h3v2h-3zM4.219 18.363l2.12-2.122 1.415 1.414-2.12 2.122zM16.24 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.342 7.759 4.22 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z"></path></svg> 
+        </a></div>
+        <div class="item__wrapp"><span class="text__remove">Отправка сообщений</span><div class="select__btn text__remove" class="text__remove">Enter</div></div>
+        <div class="item__wrapp"><span class="text__remove">Установить фон для чата</span><a href="javascript:" class=".link__select text__remove" class="text__remove">Выбрать</a></div>
+        <div class="item__wrapp text__remove" class="text__remove">Настройка уведомлений</div>
+        <div class="item__wrapp"><span class="text__remove">Скрывать содержимое</span>
+            
+                <input type="checkbox" id="cb1"> <label for="cb1"></label>
+            
+        </div>
+        <div class="item__wrapp"><span class="text__remove">Вид отображения</span><a href="javascript:" class=".link__select text__remove" class="text__remove">Выбрать</a></div>
+    </div>
+</div>
+
+<div class="chat__wrapp">
+    <div class="head">
+        <div class="set__wrapper">
+            <div class="logo__item">
+                Название компании
+            </div>
+            <div class="set__item">
+                <div class="settings">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="M12 16c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.084 0 2 .916 2 2s-.916 2-2 2-2-.916-2-2 .916-2 2-2z"></path><path d="m2.845 16.136 1 1.73c.531.917 1.809 1.261 2.73.73l.529-.306A8.1 8.1 0 0 0 9 19.402V20c0 1.103.897 2 2 2h2c1.103 0 2-.897 2-2v-.598a8.132 8.132 0 0 0 1.896-1.111l.529.306c.923.53 2.198.188 2.731-.731l.999-1.729a2.001 2.001 0 0 0-.731-2.732l-.505-.292a7.718 7.718 0 0 0 0-2.224l.505-.292a2.002 2.002 0 0 0 .731-2.732l-.999-1.729c-.531-.92-1.808-1.265-2.731-.732l-.529.306A8.1 8.1 0 0 0 15 4.598V4c0-1.103-.897-2-2-2h-2c-1.103 0-2 .897-2 2v.598a8.132 8.132 0 0 0-1.896 1.111l-.529-.306c-.924-.531-2.2-.187-2.731.732l-.999 1.729a2.001 2.001 0 0 0 .731 2.732l.505.292a7.683 7.683 0 0 0 0 2.223l-.505.292a2.003 2.003 0 0 0-.731 2.733zm3.326-2.758A5.703 5.703 0 0 1 6 12c0-.462.058-.926.17-1.378a.999.999 0 0 0-.47-1.108l-1.123-.65.998-1.729 1.145.662a.997.997 0 0 0 1.188-.142 6.071 6.071 0 0 1 2.384-1.399A1 1 0 0 0 11 5.3V4h2v1.3a1 1 0 0 0 .708.956 6.083 6.083 0 0 1 2.384 1.399.999.999 0 0 0 1.188.142l1.144-.661 1 1.729-1.124.649a1 1 0 0 0-.47 1.108c.112.452.17.916.17 1.378 0 .461-.058.925-.171 1.378a1 1 0 0 0 .471 1.108l1.123.649-.998 1.729-1.145-.661a.996.996 0 0 0-1.188.142 6.071 6.071 0 0 1-2.384 1.399A1 1 0 0 0 13 18.7l.002 1.3H11v-1.3a1 1 0 0 0-.708-.956 6.083 6.083 0 0 1-2.384-1.399.992.992 0 0 0-1.188-.141l-1.144.662-1-1.729 1.124-.651a1 1 0 0 0 .471-1.108z"></path></svg> 
+                </div>
+                <div class="close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="user__wrapp">
+        <div class="avatar"></div>
+        <div class="item__user">
+            <div class="name__user text__remove" class="text__remove">Дильгер Эдвин</div>
+            <div class="dep__user text__remove" class="text__remove">Отдел качества</div>
+            <div class="where__user text__remove" class="text__remove">Онлайн</div>
+        </div>
+    </div>
+    <div class="config__wrapp">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="M19 8h-2v3h-3v2h3v3h2v-3h3v-2h-3zM4 8a3.91 3.91 0 0 0 4 4 3.91 3.91 0 0 0 4-4 3.91 3.91 0 0 0-4-4 3.91 3.91 0 0 0-4 4zm6 0a1.91 1.91 0 0 1-2 2 1.91 1.91 0 0 1-2-2 1.91 1.91 0 0 1 2-2 1.91 1.91 0 0 1 2 2zM4 18a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3v1h2v-1a5 5 0 0 0-5-5H7a5 5 0 0 0-5 5v1h2z"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="M18.125 2H5.875A1.877 1.877 0 0 0 4 3.875v12.25C4 17.159 4.841 18 5.875 18H11v2H7v2h10v-2h-4v-2h5.125A1.877 1.877 0 0 0 20 16.125V3.875A1.877 1.877 0 0 0 18.125 2zM18 16H6V4h12v12z"></path><path d="M12 14c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="M18 2H6c-1.103 0-2 .897-2 2v18l8-4.572L20 22V4c0-1.103-.897-2-2-2zm0 16.553-6-3.428-6 3.428V4h12v14.553z"></path></svg>
+    </div>
+
+    <div class="search__wrapp">
+        <input type="text" placeholder="Гадецкий Вячеслав" class="search text__remove" class="text__remove"> 
+        <img src="img/glass.svg" alt="">
+    </div>
+
+    <div id="accordeon">
+        <div class="acc-head">
+            <div class="head__wrapp text__remove" class="text__remove">
+                <div class="ellips"></div>
+                Отдел качества
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #fff;transform: msFilter;"><path d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"></path></svg>
+        </div>
+        <div class="acc-body">
+            <ul>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Цхай Елена</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Гадецкий Вячеслав</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Сыроежко Эрнест</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Нематов Ислом</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Садыков Руслан</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Дильгер Эдвин</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Белухина Евгения</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Никонова Юлия</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Гущина Елена</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Юсупова Азиза</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Тухтасынов Тимур</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Олимджанова Диёра</span></p><span class="online"></span></li>
+            </ul> 
+        </div>
+        <div class="acc-head">
+            <div class="head__wrapp text__remove" class="text__remove">
+                <div class="ellips"></div>
+                Верстальщики
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #fff;transform: msFilter;"><path d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"></path></svg>
+        </div>
+        <div class="acc-body">
+            <ul>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Фисенко Светлана</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Сеньков Илья</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Умаров Равшан</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Рахмонов Бахтишод</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Назипов Данис</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Курбонов Мухаммад</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Сейтвелиев Эдем</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Газиев Даврон</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Ким Константин</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Романов Георгий</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Пяк Александр</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Авдеев Роман</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Жданов Антон</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Азамов Федор</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Бодров Александр</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Халеев Макар</span></p><span class="online"></span></li>
+            </ul>  
+        </div>
+        <div class="acc-head">
+            <div class="head__wrapp text__remove" class="text__remove">
+                <div class="ellips"></div>
+                Дизайнеры
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #fff;transform: msFilter;"><path d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z"></path></svg> 
+        </div>
+        <div class="acc-body">
+            <ul>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Юн Юлия</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Саламатина Лола</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Миланова Люба</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Самойлов Руслан</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Ястребов Тимур</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Дигаев Сергей</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Андреева София</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Афанасьева Злата</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Гаршина Радмила</p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Архипов Артём</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Иволга Зоя</span></p><span class="online"></span></li>
+                <li class="open__chat" ><p class="text__remove"><span class="avatar"></span><span class="get__text">Колонтай Кирилл</span></p><span class="online"></span></li> 
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="conference__popup">
+    <div class="conf__head">
+        <span class="text__remove">Конференция</span>
+        <div class="conf__item">
+            <img src="img/minimize.svg" alt="" class="minimize">
+            <img src="img/close.svg" alt="" class="close__conf">
+        </div>
+    </div>
+</div>
+
+
+<div id="chat__popup">
+
+   <!-- CHAT WINDOW -->
+<div class="chat__window">
+    <!-- Header -->
+                <div class="chat__header">
+    
+                    <div class="chat__user">
+                        <div class="user__photo"></div>
+                        <div class="user__name post__name">Дильгер Эдвин</div>  
+                    </div>
+    
+                    <div class="chat__cc">
+                            <div class="hide">
+                                <span></span>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg> 
+                    </div>
+    
+                </div>
+    <!-- Tabs -->
+                <div class="chat__tabs">
+    
+                    <div class="tab active">
+                        <div class="tab__item">
+                            <div class="tab__status online"></div>
+                            <div class="tab__name"></div>
+                        </div>
+    
+                        <button class="tab__close" type="button">
+                            <img src="images/tabs/close.svg" alt="">
+                        </button>
+                    </div>
+                
+                </div>
+    <!-- Window -->
+                <div class="chat__chat">
+    
+                    <div class="window">
+                        
+                    </div>
+    
+                </div>
+    <!-- Input -->
+    
+    
+    <div class="chat__inputt">
+        <div class="chat__input__inner">
+    
+            <div class="clip">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 330.591 330.591" style="enable-background:new 0 0 330.591 330.591;" xml:space="preserve" width="16" height="16">
+                <g>
+                    <g>
+                        <path d="M52.575,320.395c-0.693,0-1.391-0.015-2.09-0.043c-12.979-0.54-25.361-6.071-34.865-15.576
+                            c-9.504-9.504-15.035-21.886-15.576-34.864c-0.549-13.213,4.115-25.456,13.133-34.475L221.581,27.033
+                            c11.523-11.523,27.197-17.483,44.096-16.78c16.676,0.693,32.594,7.81,44.822,20.037c12.228,12.229,19.346,28.147,20.037,44.823
+                            c0.703,16.911-5.256,32.571-16.781,44.096L156.711,276.255c-2.928,2.927-7.676,2.928-10.607,0c-2.928-2.93-2.928-7.678,0-10.608
+                            l157.045-157.047c8.523-8.522,12.928-20.194,12.4-32.865c-0.537-12.906-6.098-25.279-15.658-34.84
+                            c-9.559-9.56-21.932-15.119-34.838-15.656c-12.67-0.533-24.344,3.876-32.865,12.399L23.784,246.044
+                            c-12.596,12.594-11.498,34.184,2.443,48.125c6.836,6.837,15.672,10.813,24.881,11.195c8.975,0.349,17.229-2.734,23.244-8.752
+                            l169.441-169.439c7.422-7.422,6.691-20.229-1.629-28.549c-4.113-4.114-9.414-6.505-14.924-6.733
+                            c-5.289-0.212-10.115,1.595-13.625,5.106L95.536,215.08c-2.93,2.927-7.678,2.928-10.607,0c-2.93-2.93-2.93-7.678,0-10.607
+                            L203.008,86.39c6.512-6.512,15.322-9.9,24.855-9.486c9.281,0.385,18.127,4.332,24.906,11.114
+                            c14.17,14.167,14.9,36.49,1.631,49.762L84.959,307.22C76.418,315.76,64.985,320.395,52.575,320.395z"/>
+                    </g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                </svg>
+                 
+            </div> 
+            <input type="text" class="chat__input__input" placeholder="Текст сообщения">
+            <div class="buttons">
+               <div class="smile__btn"><?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve" width="20px" height="20">
+                <g id="XMLID_92_">
+                    <path id="XMLID_93_" d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M165,300
+                        c-74.439,0-135-60.561-135-135S90.561,30,165,30s135,60.561,135,135S239.439,300,165,300z"/>
+                    <path id="XMLID_104_" d="M205.306,205.305c-22.226,22.224-58.386,22.225-80.611,0.001c-5.857-5.858-15.355-5.858-21.213,0
+                        c-5.858,5.858-5.858,15.355,0,21.213c16.963,16.963,39.236,25.441,61.519,25.441c22.276,0,44.56-8.482,61.519-25.441
+                        c5.858-5.857,5.858-15.355,0-21.213C220.661,199.447,211.163,199.448,205.306,205.305z"/>
+                    <path id="XMLID_105_" d="M115.14,147.14c3.73-3.72,5.86-8.88,5.86-14.14c0-5.26-2.13-10.42-5.86-14.14
+                        c-3.72-3.72-8.88-5.86-14.14-5.86c-5.271,0-10.42,2.14-14.141,5.86C83.13,122.58,81,127.74,81,133c0,5.26,2.13,10.42,5.859,14.14
+                        C90.58,150.87,95.74,153,101,153S111.42,150.87,115.14,147.14z"/>
+                    <path id="XMLID_106_" d="M229,113c-5.26,0-10.42,2.14-14.141,5.86C211.14,122.58,209,127.73,209,133c0,5.27,2.14,10.42,5.859,14.14
+                        C218.58,150.87,223.74,153,229,153s10.42-2.13,14.14-5.86c3.72-3.72,5.86-8.87,5.86-14.14c0-5.26-2.141-10.42-5.86-14.14
+                        C239.42,115.14,234.26,113,229,113z"/>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                </svg>
+            </div> 
+            <div class="emoji__inner">
+                <img src="images/emoji/image 1.png" alt="" class="emoji__item">
+                <img src="images/emoji/image 2.png" alt="" class="emoji__item">
+                <img src="images/emoji/😀.png" alt="" class="emoji__item">
+                <img src="images/emoji/😂.png" alt="" class="emoji__item">
+                <img src="images/emoji/😉.png" alt="" class="emoji__item">
+                <img src="images/emoji/😏.png" alt="" class="emoji__item">
+                <img src="images/emoji/😒.png" alt="" class="emoji__item">
+                <img src="images/emoji/😜.png" alt="" class="emoji__item">
+                <img src="images/emoji/😱.png" alt="" class="emoji__item">
+                <img src="images/emoji/🤔.png" alt="" class="emoji__item">
+                <img src="images/emoji/🤯.png" alt="" class="emoji__item">                       
+            </div>
+                    <div class="phone__btn">
+                        <?xml version="1.0" encoding="iso-8859-1"?>
+                        <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 59.942 59.942" style="enable-background:new 0 0 59.942 59.942;" xml:space="preserve" width="20" height="20">
+                        <g>
+                            <path d="M44.076,37.816c-0.896-0.51-1.831-0.78-2.706-0.78c-1.301,0-2.366,0.596-3.011,1.68c-1.02,1.22-2.285,2.646-2.592,2.867
+                                c-2.376,1.612-4.236,1.429-6.294-0.629L17.987,29.467c-2.045-2.045-2.233-3.928-0.632-6.291c0.224-0.309,1.65-1.575,2.87-2.596
+                                c0.778-0.463,1.312-1.151,1.546-1.995c0.311-1.123,0.082-2.444-0.652-3.731c-0.173-0.296-4.291-7.27-8.085-9.277
+                                c-0.708-0.375-1.506-0.573-2.306-0.573c-1.318,0-2.558,0.514-3.49,1.445L4.7,8.986c-4.014,4.013-5.467,8.562-4.321,13.52
+                                c0.956,4.132,3.742,8.529,8.282,13.068l14.705,14.705c5.746,5.746,11.224,8.66,16.282,8.66c0,0,0,0,0,0
+                                c3.721,0,7.188-1.581,10.306-4.698l2.537-2.537c1.541-1.541,1.891-3.87,0.872-5.796C51.356,42.112,44.383,37.996,44.076,37.816z"/>
+                            <path d="M58.942,38.003c-3.69,0-6.693-3.003-6.693-6.693c0-0.553-0.447-1-1-1s-1,0.447-1,1c0,4.794,3.899,8.693,8.693,8.693
+                                c0.553,0,1-0.447,1-1S59.495,38.003,58.942,38.003z"/>
+                            <path d="M58.196,35.662c0.553,0,1-0.447,1-1s-0.447-1-1-1c-0.886,0-1.605-0.72-1.605-1.605c0-0.553-0.447-1-1-1s-1,0.447-1,1
+                                C54.591,34.044,56.208,35.662,58.196,35.662z"/>
+                            <path d="M19.942,3.003c3.691,0,6.693,3.003,6.693,6.693c0,0.553,0.448,1,1,1s1-0.447,1-1c0-4.794-3.9-8.693-8.693-8.693
+                                c-0.552,0-1,0.447-1,1S19.39,3.003,19.942,3.003z"/>
+                            <path d="M19.689,6.345c0,0.553,0.448,1,1,1c0.885,0,1.604,0.72,1.604,1.605c0,0.553,0.448,1,1,1s1-0.447,1-1
+                                c0-1.988-1.617-3.605-3.604-3.605C20.137,5.345,19.689,5.792,19.689,6.345z"/>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        </svg>
+                         
+                    </div>
+                    <div class="enter__btn">
+                        <?xml version="1.0" standalone="no"?>
+                        <svg width="20px" height="20px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon">
+                          <path d="M864 170h-60c-4.4 0-8 3.6-8 8v518H310v-73c0-6.7-7.8-10.5-13-6.3l-141.9 112a8 8 0 0 0 0 12.6l141.9 112c5.3 4.2 13 .4 13-6.3v-75h498c35.3 0 64-28.7 64-64V178c0-4.4-3.6-8-8-8z"/>
+                        </svg>
+                    </div>
+            </div>
+    
+        </div>
+    </div>
+    
+    </div>     
+    
+    
+    
+    <!----------------------------------------------------------------------------------------------------------> 
+</div>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
